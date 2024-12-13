@@ -1,0 +1,33 @@
+# /etc/conf.d/lebowskiscoind: config file for /etc/init.d/lebowskiscoind
+
+# Config file location
+#lebowskiscoind_CONFIGFILE="/etc/lebowskiscoin/lebowskiscoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $lebowskiscoind_USER)
+#lebowskiscoind_PIDDIR="/var/run/lebowskiscoind"
+
+# What filename to give the pidfile
+#lebowskiscoind_PIDFILE="${lebowskiscoind_PIDDIR}/lebowskiscoind.pid"
+
+# Where to write lebowskiscoind data (be mindful that the blockchain is large)
+#lebowskiscoind_DATADIR="/var/lib/lebowskiscoind"
+
+# User and group to own lebowskiscoind process
+#lebowskiscoind_USER="lebowskiscoin"
+#lebowskiscoind_GROUP="lebowskiscoin"
+
+# Path to lebowskiscoind executable
+#lebowskiscoind_BIN="/usr/bin/lebowskiscoind"
+
+# Nice value to run lebowskiscoind under
+#lebowskiscoind_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+lebowskiscoind_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for lebowskiscoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+lebowskiscoind_SIGTERM_TIMEOUT=60

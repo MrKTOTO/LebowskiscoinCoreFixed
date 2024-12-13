@@ -1,0 +1,6 @@
+usr/local/bin/lebowskiscoin-qt usr/bin
+share/pixmaps/lebowskiscoin32.xpm usr/share/pixmaps
+share/pixmaps/lebowskiscoin16.xpm usr/share/pixmaps
+share/pixmaps/lebowskiscoin128.png usr/share/pixmaps
+debian/lebowskiscoin-qt.desktop usr/share/applications
+debian/lebowskiscoin-qt.protocol usr/share/kde4/services/

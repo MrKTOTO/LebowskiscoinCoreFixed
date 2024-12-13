@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=LebowskisCoin Core
+Comment=Connect to the LebowskisCoin P2P Network
+Comment[de]=Verbinde mit dem LebowskisCoin peer-to-peer Netzwerk
+Comment[fr]=LebowskisCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=LebowskisCoin, eşten eşe kriptografik sanal para birimi
+Exec=lebowskiscoin-qt %u
+Terminal=false
+Type=Application
+Icon=lebowskiscoin128
+MimeType=x-scheme-handler/lebowskiscoin;
+Categories=Office;Finance;
