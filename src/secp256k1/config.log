@@ -37,6 +37,26 @@ PATH: /bin
 PATH: /usr/games
 PATH: /usr/local/games
 PATH: /usr/lib/wsl/lib
+PATH: /mnt/c/Python/Python311/Scripts/
+PATH: /mnt/c/Python/Python311/
+PATH: /mnt/c/Python27/
+PATH: /mnt/c/Python27/Scripts
+PATH: /mnt/c/Windows/system32
+PATH: /mnt/c/Windows
+PATH: /mnt/c/Windows/System32/Wbem
+PATH: /mnt/c/Windows/System32/WindowsPowerShell/v1.0/
+PATH: /mnt/c/Windows/System32/OpenSSH/
+PATH: /mnt/c/Program Files/Git/cmd
+PATH: /mnt/c/Users/HP/AppData/Roaming/nvm
+PATH: /mnt/c/Program Files/nodejs
+PATH: /mnt/c/Program Files/PuTTY/
+PATH: /mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/
+PATH: /mnt/c/Users/HP/AppData/Local/Programs/Python/Launcher/
+PATH: /mnt/c/Users/HP/AppData/Local/pnpm
+PATH: /mnt/c/Users/HP/AppData/Local/Microsoft/WindowsApps
+PATH: /mnt/c/Users/HP/AppData/Local/Programs/Microsoft VS Code/bin
+PATH: /mnt/c/Users/HP/AppData/Roaming/npm
+PATH: /snap/bin
 
 
 ## ----------- ##
@@ -213,9 +233,8 @@ configure:3688: checking whether we are cross compiling
 configure:3696: x86_64-w64-mingw32-gcc -o conftest.exe -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.c  >&5
 configure:3700: $? = 0
 configure:3707: ./conftest.exe
-./configure: line 3709: ./conftest.exe: cannot execute binary file: Exec format error
-configure:3711: $? = 126
-configure:3699: result: yes
+configure:3711: $? = 0
+configure:3699: result: no
 configure:3704: checking for suffix of object files
 configure:3726: x86_64-w64-mingw32-gcc -c -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  conftest.c >&5
 configure:3730: $? = 0
@@ -317,7 +336,6 @@ configure:6709: result: no
 configure:6719: checking for mt
 configure:6735: found /usr/bin/mt
 configure:6746: result: mt
-configure:6758: WARNING: using cross tools not prefixed with host triplet
 configure:6769: checking if mt is a manifest tool
 configure:6775: mt '-?'
 configure:6783: result: no
@@ -366,6 +384,10 @@ configure: failed program was:
 configure:7593: checking for ANSI C header files
 configure:7613: x86_64-w64-mingw32-gcc -c -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  conftest.c >&5
 configure:7613: $? = 0
+configure:7686: x86_64-w64-mingw32-gcc -o conftest.exe -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.c  >&5
+configure:7686: $? = 0
+configure:7686: ./conftest.exe
+configure:7686: $? = 0
 configure:7697: result: yes
 configure:7710: checking for sys/types.h
 configure:7710: x86_64-w64-mingw32-gcc -c -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  conftest.c >&5
@@ -934,6 +956,7 @@ config.status:1150: creating libsecp256k1.pc
 config.status:1150: creating src/libsecp256k1-config.h
 config.status:1379: executing depfiles commands
 config.status:1456: cd .       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for 'am--depfiles'.
 config.status:1461: $? = 0
 config.status:1379: executing libtool commands
 

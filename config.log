@@ -36,6 +36,26 @@ PATH: /bin
 PATH: /usr/games
 PATH: /usr/local/games
 PATH: /usr/lib/wsl/lib
+PATH: /mnt/c/Python/Python311/Scripts/
+PATH: /mnt/c/Python/Python311/
+PATH: /mnt/c/Python27/
+PATH: /mnt/c/Python27/Scripts
+PATH: /mnt/c/Windows/system32
+PATH: /mnt/c/Windows
+PATH: /mnt/c/Windows/System32/Wbem
+PATH: /mnt/c/Windows/System32/WindowsPowerShell/v1.0/
+PATH: /mnt/c/Windows/System32/OpenSSH/
+PATH: /mnt/c/Program Files/Git/cmd
+PATH: /mnt/c/Users/HP/AppData/Roaming/nvm
+PATH: /mnt/c/Program Files/nodejs
+PATH: /mnt/c/Program Files/PuTTY/
+PATH: /mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/
+PATH: /mnt/c/Users/HP/AppData/Local/Programs/Python/Launcher/
+PATH: /mnt/c/Users/HP/AppData/Local/pnpm
+PATH: /mnt/c/Users/HP/AppData/Local/Microsoft/WindowsApps
+PATH: /mnt/c/Users/HP/AppData/Local/Programs/Microsoft VS Code/bin
+PATH: /mnt/c/Users/HP/AppData/Roaming/npm
+PATH: /snap/bin
 
 
 ## ----------- ##
@@ -207,9 +227,8 @@ configure:4002: checking whether we are cross compiling
 configure:4010: x86_64-w64-mingw32-g++ -o conftest.exe -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp  >&5
 configure:4014: $? = 0
 configure:4021: ./conftest.exe
-./configure: line 4023: ./conftest.exe: cannot execute binary file: Exec format error
-configure:4025: $? = 126
-configure:4013: result: yes
+configure:4025: $? = 0
+configure:4013: result: no
 configure:4018: checking for suffix of object files
 configure:4040: x86_64-w64-mingw32-g++ -c -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  conftest.cpp >&5
 configure:4044: $? = 0
@@ -491,7 +510,6 @@ configure:8587: result: no
 configure:8597: checking for mt
 configure:8613: found /usr/bin/mt
 configure:8624: result: mt
-configure:8636: WARNING: using cross tools not prefixed with host triplet
 configure:8647: checking if mt is a manifest tool
 configure:8653: mt '-?'
 configure:8661: result: no
@@ -538,6 +556,10 @@ configure: failed program was:
 configure:9471: checking for ANSI C header files
 configure:9491: x86_64-w64-mingw32-gcc -c -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  conftest.c >&5
 configure:9491: $? = 0
+configure:9564: x86_64-w64-mingw32-gcc -o conftest.exe -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.c  >&5
+configure:9564: $? = 0
+configure:9564: ./conftest.exe
+configure:9564: $? = 0
 configure:9575: result: yes
 configure:9588: checking for sys/types.h
 configure:9588: x86_64-w64-mingw32-gcc -c -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  conftest.c >&5
@@ -1218,7 +1240,7 @@ configure: failed program was:
 configure:17371: result: no
 configure:17384: checking for strerror_r
 configure:17384: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
-/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccZpFy7O.o:conftest.cpp:(.text.startup+0xa): undefined reference to `strerror_r'
+/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccxh9wAs.o:conftest.cpp:(.text.startup+0xa): undefined reference to `strerror_r'
 collect2: error: ld returned 1 exit status
 configure:17384: $? = 1
 configure: failed program was:
@@ -1305,6 +1327,106 @@ configure: failed program was:
 | }
 configure:17384: result: no
 configure:17393: checking whether strerror_r returns char *
+configure:17445: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+conftest.cpp: In function 'int main()':
+conftest.cpp:82:44: error: too many arguments to function 'char* strerror_r()'
+   82 |    char x = *strerror_r (0, buf, sizeof buf);
+      |                                            ^
+conftest.cpp:77:15: note: declared here
+   77 |  extern char *strerror_r ();
+      |               ^~~~~~~~~~
+conftest.cpp:83:13: error: 'isalpha' was not declared in this scope
+   83 |    return ! isalpha (x);
+      |             ^~~~~~~
+configure:17445: $? = 1
+configure: program exited with status 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "LebowskisCoin Core"
+| #define PACKAGE_TARNAME "lebowskiscoin"
+| #define PACKAGE_VERSION "2.0.0"
+| #define PACKAGE_STRING "LebowskisCoin Core 2.0.0"
+| #define PACKAGE_BUGREPORT "https://github.com/lebowskiscoin-community/lebowskiscoin/issues"
+| #define PACKAGE_URL "https://github.com/lebowskiscoin-community/lebowskiscoin"
+| #define HAVE_CXX11 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define LT_OBJDIR ".libs/"
+| #define HAVE_LIBMINGWTHRD 1
+| #define HAVE_LIBKERNEL32 1
+| #define HAVE_LIBUSER32 1
+| #define HAVE_LIBGDI32 1
+| #define HAVE_LIBCOMDLG32 1
+| #define HAVE_LIBWINSPOOL 1
+| #define HAVE_LIBWINMM 1
+| #define HAVE_LIBSHELL32 1
+| #define HAVE_LIBCOMCTL32 1
+| #define HAVE_LIBOLE32 1
+| #define HAVE_LIBOLEAUT32 1
+| #define HAVE_LIBUUID 1
+| #define HAVE_LIBRPCRT4 1
+| #define HAVE_LIBADVAPI32 1
+| #define HAVE_LIBWS2_32 1
+| #define HAVE_LIBMSWSOCK 1
+| #define HAVE_LIBSHLWAPI 1
+| #define HAVE_LIBIPHLPAPI 1
+| #define HAVE_LIBCRYPT32 1
+| #define HAVE_PTHREAD_PRIO_INHERIT 1
+| #define HAVE_PTHREAD 1
+| #define _FILE_OFFSET_BITS 64
+| #define HAVE_DECL_STRERROR_R 0
+| /* end confdefs.h.  */
+| #include <stdio.h>
+| #ifdef HAVE_SYS_TYPES_H
+| # include <sys/types.h>
+| #endif
+| #ifdef HAVE_SYS_STAT_H
+| # include <sys/stat.h>
+| #endif
+| #ifdef STDC_HEADERS
+| # include <stdlib.h>
+| # include <stddef.h>
+| #else
+| # ifdef HAVE_STDLIB_H
+| #  include <stdlib.h>
+| # endif
+| #endif
+| #ifdef HAVE_STRING_H
+| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+| #  include <memory.h>
+| # endif
+| # include <string.h>
+| #endif
+| #ifdef HAVE_STRINGS_H
+| # include <strings.h>
+| #endif
+| #ifdef HAVE_INTTYPES_H
+| # include <inttypes.h>
+| #endif
+| #ifdef HAVE_STDINT_H
+| # include <stdint.h>
+| #endif
+| #ifdef HAVE_UNISTD_H
+| # include <unistd.h>
+| #endif
+| 	extern char *strerror_r ();
+| int
+| main ()
+| {
+| char buf[100];
+| 	  char x = *strerror_r (0, buf, sizeof buf);
+| 	  return ! isalpha (x);
+|   ;
+|   return 0;
+| }
 configure:17455: result: no
 configure:17476: checking whether the linker accepts -Wl,--large-address-aware
 configure:17495: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib   -Wl,--large-address-aware conftest.cpp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
@@ -5189,7 +5311,7 @@ configure:19857: $? = 0
 configure:19867: result: yes
 configure:19889: checking for library containing png_error 
 configure:19920: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe  -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtCore -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtGui -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtTest -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtPrintSupport -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lz  -limm32  -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib >&5
-/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccKmG6m4.o:conftest.cpp:(.text.startup+0xa): undefined reference to `png_error'
+/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccWg2Zwn.o:conftest.cpp:(.text.startup+0xa): undefined reference to `png_error'
 collect2: error: ld returned 1 exit status
 configure:19920: $? = 1
 configure: failed program was:
@@ -5290,7 +5412,7 @@ configure:19920: $? = 0
 configure:19937: result: -lqtpng
 configure:19956: checking for library containing jpeg_create_decompress 
 configure:19987: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe  -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtCore -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtGui -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtTest -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtPrintSupport -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lqtpng -lz  -limm32  -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib >&5
-/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccXRlBeQ.o:conftest.cpp:(.text.startup+0xa): undefined reference to `jpeg_create_decompress'
+/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccuyJPxd.o:conftest.cpp:(.text.startup+0xa): undefined reference to `jpeg_create_decompress'
 collect2: error: ld returned 1 exit status
 configure:19987: $? = 1
 configure: failed program was:
@@ -5584,7 +5706,7 @@ configure:20004: result: no
 configure:20011: WARNING: libjpeg not found. Assuming qt has it built-in
 configure:20023: checking for library containing pcre16_exec
 configure:20054: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe  -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtCore -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtGui -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtTest -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtPrintSupport -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lqtpng -lz  -limm32  -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib >&5
-/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccRC6YqV.o:conftest.cpp:(.text.startup+0xa): undefined reference to `pcre16_exec'
+/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccPzz3El.o:conftest.cpp:(.text.startup+0xa): undefined reference to `pcre16_exec'
 collect2: error: ld returned 1 exit status
 configure:20054: $? = 1
 configure: failed program was:
@@ -5685,7 +5807,7 @@ configure:20054: $? = 0
 configure:20071: result: -lqtpcre
 configure:20090: checking for library containing hb_ot_tags_from_script 
 configure:20121: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe  -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtCore -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtGui -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtTest -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/QtPrintSupport -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lqtpcre -lqtpng -lz  -limm32  -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib >&5
-/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccfGBFvK.o:conftest.cpp:(.text.startup+0xa): undefined reference to `hb_ot_tags_from_script'
+/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccTizhv8.o:conftest.cpp:(.text.startup+0xa): undefined reference to `hb_ot_tags_from_script'
 collect2: error: ld returned 1 exit status
 configure:20121: $? = 1
 configure: failed program was:
@@ -6425,8 +6547,8 @@ configure:24143: $? = 0
 configure:24157: result: yes
 configure:24269: checking for dynamic linked boost test
 configure:24284: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -mthreads -I/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../include -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  -L/home/blackluv/lebrowski/depends/x86_64-w64-mingw32/share/../lib -lboost_unit_test_framework-mt-s >&5
-/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccMy9aNc.o:conftest.cpp:(.text.startup+0x29): undefined reference to `__imp__ZN5boost9unit_test14unit_test_mainEPFbvEiPPc'
-/usr/bin/x86_64-w64-mingw32-ld: /tmp/ccMy9aNc.o:conftest.cpp:(.text.startup+0x57): undefined reference to `__imp__ZTVN5boost9unit_test15unit_test_log_tE'
+/usr/bin/x86_64-w64-mingw32-ld: /tmp/cc7RJtmQ.o:conftest.cpp:(.text.startup+0x29): undefined reference to `__imp__ZN5boost9unit_test14unit_test_mainEPFbvEiPPc'
+/usr/bin/x86_64-w64-mingw32-ld: /tmp/cc7RJtmQ.o:conftest.cpp:(.text.startup+0x57): undefined reference to `__imp__ZTVN5boost9unit_test15unit_test_log_tE'
 collect2: error: ld returned 1 exit status
 configure:24284: $? = 1
 configure: failed program was:
@@ -6930,6 +7052,7 @@ config.status:1443: creating contrib/devtools/split-debug.sh
 config.status:1443: creating src/config/bitcoin-config.h
 config.status:1703: executing depfiles commands
 config.status:1780: cd src       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
+make: Nothing to be done for 'am--depfiles'.
 config.status:1785: $? = 0
 config.status:1703: executing libtool commands
 configure:28931: === configuring in src/univalue (/home/blackluv/lebrowski/src/univalue)
