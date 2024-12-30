@@ -131,10 +131,10 @@ public:
         consensus.defaultAssumeValid = uint256S("0x9e1049be395301b8c71dbfc0f18555e45506439a4ae25b50beea8217537c8ca1");
 
         // AuxPoW parameters
-        consensus.nAuxpowChainId = 0x2047;
+        consensus.nAuxpowChainId = 0x2040;
         consensus.fStrictChainId = true;  // we set this to false as block is nonAuxPow
         consensus.nBlockAfterAuxpowRewardThreshold = 5;
-        consensus.nAuxpowStartHeight = 20000;
+        consensus.nAuxpowStartHeight = 24000;
 
         //consensus.fAllowLegacyBlocks = true;
 
