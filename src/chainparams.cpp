@@ -134,7 +134,7 @@ public:
         consensus.nAuxpowChainId = 0x2040;
         consensus.fStrictChainId = true;  // we set this to false as block is nonAuxPow
         consensus.nBlockAfterAuxpowRewardThreshold = 5;
-        consensus.nAuxpowStartHeight = 20000;
+        consensus.nAuxpowStartHeight = 24000;
 
         //consensus.fAllowLegacyBlocks = true;
 
@@ -187,7 +187,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x0aaa0763bc8a16de6292bb04a0b53f43ee7b24fc63290e787553828d9f89c026"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        //vSeeds.push_back(CDNSSeedData("luckycoinfoundation.org", "dnsseed.luckycoinfoundation.org", true));
+        vSeeds.push_back(CDNSSeedData("s3na.xyz", "lbw-seed.s3na.xyz")); // senasgr x unstable
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,12);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,8);

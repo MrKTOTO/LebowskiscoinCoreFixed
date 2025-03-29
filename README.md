@@ -1,5 +1,3 @@
-# PLEASE USE THE NEW [v3 LUCKYCOIN CLIENT](https://github.com/LebowskisCoinProj/lebowskiscoinV3) WITH AUXPOW ENABLED. DO NOT USE THIS REPO ANY LONGER. THANKS AND STAY LUCKY MY FRIENDS!
-
 <h1 align="center">
 <img src="[https://lebowskiscoinfoundation.org/images/logo.png](https://lebowskiscoinfoundation.org/images/lebowskiscoin-logo.avif)" data-canonical-src="[https://lebowskiscoinfoundation.org/images/logo.png](https://lebowskiscoinfoundation.org/images/lebowskiscoin-logo.avif)" width="250" height="250" alt="LebowskisCoin"/>
 <br/><br/>

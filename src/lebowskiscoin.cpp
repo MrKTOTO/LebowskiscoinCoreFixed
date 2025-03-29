@@ -170,7 +170,7 @@ CAmount GetDogecoinBlockSubsidy(int nHeight, int nFees, const Consensus::Params&
 {
     CAmount nSubsidy = 19.98 * COIN;
 
-    if(nHeight > 19000) 
+    if(nHeight > 24000) 
     {
         nSubsidy = 8 * COIN;
     }
