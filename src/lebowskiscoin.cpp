@@ -166,7 +166,7 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
     return true;
 }
 
-CAmount GetDogecoinBlockSubsidy(int nHeight, int nFees, const Consensus::Params& consensusParams, uint256 prevHash)
+CAmount GetDogecoinBlockSubsidy(int nHeight, CAmount nFees, const Consensus::Params& consensusParams, uint256 prevHash)
 {
     CAmount nSubsidy = 19.98 * COIN;
 
